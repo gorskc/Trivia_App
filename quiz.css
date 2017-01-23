@@ -1,0 +1,49 @@
+body {
+	background-color: white;
+}
+
+#quiz_area {
+	background-color: white;
+	border-color: #000;
+	border-style: solid;
+	width: 600px;
+	height: 250px;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	-moz-box-shadow: 5px 5px 5px 6px #ccc;
+	-webkit-box-shadow: 5px 5px 5px 6px #ccc;
+	box-shadow: 5px 5px 5px 6px #ccc;
+}
+
+#num {
+	padding-left: 3px;
+	margin: -3px;
+	font-size: 30px;
+	border-color: #000;
+	border-style: solid;
+}
+
+#question {
+	margin: 10px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#choices {
+	padding-left: 250px;
+	font-size: 18px;
+}
+
+#buttons {
+	padding-left: 240px;
+	padding-top: 10px;
+	font-size: 15px;
+}
+
+.score {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 40px;
+	font-weight: bold;
+}

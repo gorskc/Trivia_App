@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<SCRIPT Language="JavaScript">
+<!--
+function nextpage() {
+// I want to send on the MyValue element of the form below.
+window.location.href = "send2.htm?MyValue.value='"+document.forms.myForm.MyValue.value+
+"'&MyTest.value='"+document.forms.myForm.MyTest.value+"'"
+
+}
+//-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM NAME="myForm">
+<INPUT TYPE="TEXT" NAME="MyValue" SIZE="5" VALUE="AEIOU">
+<INPUT TYPE="BUTTON" onClick="nextpage()" VALUE="Go to the next page">
+</FORM>
+</BODY>
+</HTML>
