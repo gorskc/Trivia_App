@@ -1,47 +1,74 @@
 <body>
-		<div class="wrapper" id="main">
-			<div class="title align-text">
-				<h1>Trivia Questions</h1>
-				<h3>Categories:</h3>
-			</div>
-			<div class="form-group" id="column1">
-				<input type="submit" class="cat btn" id="listAnimals" name="link" value="Animals">
-				<input type="submit" class="cat btn" id="listArt" name="link" value="Art">
-				<input type="submit" class="cat btn" id="listBiology" name="link" value="Biology">
-      </div>
-      <div class="form-group" id="column2">
-				<input type="submit" class="cat btn" id="listChemistry" name="link" value="Chemistry"> 
-				<input type="submit" class="cat btn" id="listComputers" name="link" value="Computers"> 
-				<input type="submit" class="cat btn" id="listFood" name="link" value="Food">
-      </div>
-      <div class="form-group" id="column3">
-				<input type="submit" class="cat btn" id="listGermany" name="link" value="Germany">
-				<input type="submit" class="cat btn" id="listLiterature" name="link" value="Literature">
-				<input type="submit" class="cat btn" id="listMovies" name="link" value="Movies">
-      </div>
-      <div class="form-group" id="column4">
-				<input type="submit" class="cat btn" id="listMusic" name="link" value="Music">
-				<input type="submit" class="cat btn" id="listSports" name="link" value="Sports">
+	<div class="wrapper" id="main">
+		<div class="title align-text">
+			<h1>Trivia Questions</h1>
+			<h3>Categories:</h3>
+		</div>
+		<div class="container" id="column1">
+			<div class="row">
+				<div class="col-md-3">
+					<button class="cat btn" id="listAnimals"><i class="fa fa-paw"></i><br>Animals</button>
+				</div>
+				<div class="col-md-3">
+					<button class="cat btn" id="listArt"><i class="fa fa-paint-brush"></i><br>Art</button>
+				</div>
+				<div class="col-md-3">
+					<button class="cat btn" id="listBiology"><i class="fa fa-tree"></i><br>Biology</button>
+				</div>
+				<div class="col-md-3">
+				 <button class="cat btn" id="listSports"><i class="fa fa-futbol-o"></i><br>Sports</button>
+			 </div>
 			</div>
 		</div>
-		<div class="wrapper" id="quiz_area">
-      <div class="q-wrapper">
-        <h3 class="question" id="num"></h3>
-        <p class="question" id="question"></p>
-      </div>
-      <div id="choices">
-          <button class="btn answer" name="choice" id="choice0" value="0"></button>
-          <button class="btn answer" name="choice" id="choice1" value="1"></button>
-          <button class="btn answer" name="choice" id="choice2" value="2"></button>
-          <button class="btn answer" name="choice" id="choice3" value="3"></button>
-      </div>
-      <div id="buttons">
-          <input type="button"class="btn control" id="btn1" value="Back"/>
-          <input type="button" class="btn control" id="btn2" value="Next"/>
-      </div>
-		</div>
-		<div class="wrapper" id="results">
-			<h3 id="message"></h3>
-			<button class="btn" id="reset">Play Again</button>
-		</div>
+		<div class="container" id="column2">
+			<div class="row">
+				<div class="col-md-3">
+					<button class="cat btn" id="listChemistry"><i class="fa fa-flask"></i><br>Chemistry</button>
+				</div>
+				<div class="col-md-3">
+					<button class="cat btn" id="listComputers"><i class="fa fa-desktop"></i><br>Computers</button>
+				</div>
+				<div class="col-md-3">
+					<button class="cat btn" id="listFood"><i class="fa fa-cutlery"></i><br>Food</button>
+				</div>
+				<div class="col-md-3">
+						<button class="cat btn" id="listLiterature"><i class="fa fa-book"></i><br>Literature</button>
+					</div>
+			</div>
+	 </div>
+	 <div class="container" id="column3">
+		 <div class="row">
+			 <div class="col-md-3">
+				 <button class="cat btn" id="listMusic"><i class="fa fa-music"></i><br>Music</button>
+			 </div>
+			 <div class="col-md-3">
+				 <button class="cat btn" id="listGermany"><i class="fa fa-flag"></i><br>Germany</button>
+			 </div>
+			 <div class="col-md-3">
+				 <button class="cat btn" id="listMovies"><i class="fa fa-film"></i><br>Movies</button>
+			 </div>
+		 </div>
+	 </div>
+	</div>
+	<!-- Quiz Questions -->
+	<div class="wrapper" id="quiz_area">
+    <div class="q-wrapper">
+      <h3 class="question" id="num"></h3>
+      <p class="question" id="question"></p>
+    </div>
+    <div id="choices">
+        <button class="btn answer" name="choice" id="choice0" value="0"></button>
+        <button class="btn answer" name="choice" id="choice1" value="1"></button>
+        <button class="btn answer" name="choice" id="choice2" value="2"></button>
+        <button class="btn answer" name="choice" id="choice3" value="3"></button>
+    </div>
+    <div id="buttons">
+        <input type="button"class="btn control" id="btn1" value="Back"/>
+        <input type="button" class="btn control" id="btn2" value="Next"/>
+    </div>
+	</div>
+	<div class="wrapper" id="results">
+		<h3 id="message"></h3>
+		<button class="btn" id="reset">Play Again</button>
+	</div>
 	</body>
